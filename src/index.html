@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>AmmiboAPI</title>
+</head>
+<header>
+    <div class="max-w-full mx-auto">
+        <div class="flex justify-between items-center mb-8">
+            <img src="/src/nintendo_logo.png" alt="Nintendo Logo" class="h-12 logo">
+            <h1 class="text-3xl font-bold text-black">Buscar Amiibos</h1>
+            <img src="/src/amiibo_logo.png" alt="Amiibo Logo" class="h-12">
+        </div>
+        <div class="flex mb-4">
+            <input id="searchInput" type="text"
+                class="border border-gray-300 rounded-l py-2 px-4 w-full bg-white text-gray-800 focus:outline-none focus:border-red-500"
+                placeholder="Buscar por nombre...">
+            <button id="searchBtn"
+                class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-r focus:outline-none">Buscar</button>
+        </div>
+    </div>
+</header>
+
+<body class="bg-gray-100 p-4">
+    <div></div>
+    <div id="results" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- resultados -->
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
